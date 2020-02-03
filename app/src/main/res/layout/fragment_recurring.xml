@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    tools:context=".RecurringFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="241dp"
+        android:layout_height="247dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_holder">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/card_payment_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:height="25dp"
+            android:width="137dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="119dp"
+            android:text="Card Payment"
+            android:textSize="20.49sp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:width="125dp"
+            android:height="20dp"
+            android:gravity="center"
+            android:text="Recurring Payment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:width="56dp"
+            android:height="56dp"
+            android:background="@drawable/fab_button_next"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4"
+            android:layout_marginBottom="47.5dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="95.7dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="19.18dp"
+            android:layout_marginLeft="19.18dp"
+            android:layout_marginBottom="14.14dp"
+            android:width="95.7dp"
+            android:height="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/btn_more_option"
+            android:textColor="#1976D2"
+            android:textSize="14.34sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
